@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virginia Driver Knowledge Exam — Practice</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="brand" id="brand" type="button" title="Home">
+        <span class="brand-seal" aria-hidden="true">VA</span>
+        <span class="brand-text">
+          <span class="brand-title">Driver Knowledge Exam</span>
+          <span class="brand-sub">Virginia practice simulator · based on the April 2026 Driver’s Manual</span>
+        </span>
+      </button>
+      <div class="topbar-status" id="topbar-status"></div>
+    </div>
+  </header>
+
+  <main id="app" class="app" aria-live="polite"></main>
+
+  <footer class="footer">
+    Unofficial practice tool. Questions are written from the Virginia Driver’s Manual; the real exam draws from DMV’s own question pool.
+  </footer>
+
+  <script src="data/signs.js"></script>
+  <script src="data/gk-a.js"></script>
+  <script src="data/gk-b.js"></script>
+  <script src="data/gk-c.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
