@@ -9,8 +9,12 @@
   var STORE_KEY = 'vaDmvPractice.v1';
 
   var VA = window.VA || {};
-  var SIGN_BANK = VA.signQuestions || [];
-  var GENERAL_BANK = VA.generalQuestions || [];
+  // Part 1 is road signs only; picture questions about signals, lane-use
+  // signals and pavement markings join the Part 2 pool.
+  var NON_SIGN_TOPICS = { 'Traffic Signals': true, 'Lane Use Signals': true, 'Pavement Markings': true };
+  var ALL_SIGN_QS = VA.signQuestions || [];
+  var SIGN_BANK = ALL_SIGN_QS.filter(function (q) { return !NON_SIGN_TOPICS[q.topic]; });
+  var GENERAL_BANK = (VA.generalQuestions || []).concat(ALL_SIGN_QS.filter(function (q) { return NON_SIGN_TOPICS[q.topic]; }));
   var ART = VA.signArt || {};
   var BY_ID = {};
   SIGN_BANK.concat(GENERAL_BANK).forEach(function (q) { BY_ID[q.id] = q; });

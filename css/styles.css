@@ -65,7 +65,7 @@ code { background: var(--blue-soft); padding: 0 .3em; border-radius: 4px; }
 .brand-title { font-weight: 700; font-size: 1.1rem; }
 .brand-sub { font-size: .8rem; opacity: .8; }
 .topbar-status { display: flex; align-items: center; gap: .75rem; }
-.timer { font-variant-numeric: tabular-nums; font-weight: 600; opacity: .95; }
+.timer { font-variant-numeric: tabular-nums; font-weight: 600; opacity: .95; white-space: nowrap; }
 
 .app {
   flex: 1;

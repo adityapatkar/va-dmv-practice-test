@@ -30,7 +30,7 @@ All questions are written from the **Virginia Driver's Manual (April 2026 editio
 
 | File | Content | Count |
 |---|---|---|
-| `data/signs.js` | Sign art (inline SVG) + Part 1 sign questions | see file |
+| `data/signs.js` | 88 inline-SVG signs, signals, and pavement markings; 93 road sign questions for Part 1, plus 20 picture questions on signals and markings that go into the Part 2 pool | 113 |
 | `data/gk-a.js` | Signals, signs and markings, speed, right-of-way, passing, turning (pp. 5–18) | 142 |
 | `data/gk-b.js` | Space cushion, sharing the road, parking, hazards, alcohol, crashes (pp. 19–26) | 138 |
 | `data/gk-c.js` | Seat belts, child seats, penalties, DUI law, license types, insurance, testing (pp. 3–4, 26–34) | 115 |
